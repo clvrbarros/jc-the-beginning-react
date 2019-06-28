@@ -4,14 +4,16 @@ import { createAppContainer, createStackNavigator } from 'react-navigation';
 //rotas
 import Login from './pages/Login';
 import Register from './pages/Register';
+import RecoverPass from './pages/RecoverPass';
 
 
 export default createAppContainer(
     createStackNavigator({
         Login,
         Register,
+        RecoverPass
     }, {
-        initialRouteName: 'Register',
+        initialRouteName: 'Login',
         mode: 'modal',
     })
 );
